@@ -254,6 +254,7 @@ body {
   #box {
     flex-direction: column;
     text-align: center;
+    font-size: 18px;
   }
 
   #imageside {
