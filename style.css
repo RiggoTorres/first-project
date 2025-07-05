@@ -251,18 +251,42 @@ body {
 }
 
 
-/* --- Disable responsive stacking, use scale for mobile --- */
+
+/* --- Proportional scaling for all content on mobile, centered --- */
+#scale-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  /* fallback for desktop */
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1200px) {
+  #scale-wrapper {
+    width: 1200px;
+  }
+}
+
 @media (max-width: 800px) {
-  html {
-    /* Scale the whole page down for small screens */
-    transform: scale(0.6);
-    transform-origin: top left;
-    width: 100vw;
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     overflow-x: hidden;
   }
-  body {
-    width: 100vw;
-    overflow-x: hidden;
+  #scale-wrapper {
+    transform: scale(0.6);
+    transform-origin: top center;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
