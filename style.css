@@ -250,39 +250,21 @@ body {
   }
 }
 
-/* Responsive Layout */
-@media (max-width: 479px) {
-  #box {
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
+
+/* --- Disable responsive stacking, use scale for mobile --- */
+@media (max-width: 800px) {
+  html {
+    /* Scale the whole page down for small screens */
+    transform: scale(0.6);
+    transform-origin: top left;
+    width: 100vw;
+    overflow-x: hidden;
   }
-    
+  body {
+    width: 100vw;
+    overflow-x: hidden;
   }
-  @media (max-width: 479px) {
-    #toprow {
-      flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
-    }
 }
-
-
-  #imageside {
-    justify-content: center;
-    width: 100%;
-    max-width: 400px;
-  }
-
-  #textside {
-    width: 100%;
-  }
-
-  #searchTopics {
-    width: 90%;
-  }
 
 
 #quiz-button {
@@ -301,10 +283,10 @@ body {
   max-width: 480px;
   width: 200px;
   text-align: center;
-  opacity:0;
-  transform: translateX(-25px);
+  opacity: 0;
+  transform: translateX(-25px) scale(1);
   animation: quizFadeIn 1s ease-out forwards;
-  animation-delay:0.3s;
+  animation-delay: 0.3s;
 }
 
 #quiz-logo {
@@ -315,8 +297,8 @@ body {
 }
 
 #quiz-button:hover {
-  background: linear-gradient(135deg, #f0fbff, #b7e7f8); 
-  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(135deg, #f0fbff, #b7e7f8);
+  transform: translateX(0) translateY(-3px) scale(1.1); /* ✅ now works! */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
