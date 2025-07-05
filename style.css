@@ -250,45 +250,39 @@ body {
   }
 }
 
-
-
-/* --- Proportional scaling for all content on mobile, centered --- */
-#scale-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  /* fallback for desktop */
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-@media (max-width: 1200px) {
-  #scale-wrapper {
-    width: 1200px;
+/* Responsive Layout */
+@media (max-width: 479px) {
+  #box {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
   }
+    
+  }
+  @media (max-width: 479px) {
+    #toprow {
+      flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    }
 }
 
-@media (max-width: 800px) {
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    overflow-x: hidden;
+
+  #imageside {
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
   }
-  #scale-wrapper {
-    transform: scale(0.6);
-    transform-origin: top center;
-    width: 1200px;
-    margin: 0 auto;
+
+  #textside {
+    width: 100%;
   }
-}
+
+  #searchTopics {
+    width: 90%;
+  }
 
 
 #quiz-button {
