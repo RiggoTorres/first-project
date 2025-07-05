@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Multi-Feature Website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Funverse </title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -13,13 +14,13 @@
 <body>
     <div id="toprow">
         <div id="header-container">
-            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jza2vqfffgdsvnbjb0dg0v68%2F1751611522_img_0.webp?st=2025-07-04T05%3A47%3A10Z&se=2025-07-10T06%3A47%3A10Z&sks=b&skt=2025-07-04T05%3A47%3A10Z&ske=2025-07-10T06%3A47%3A10Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=xkFG034z9YkepUNmxwVWXA8x68Pp%2BauFxIoCI5HWE9g%3D&az=oaivgprodscus" alt="Funverse Logo" id="logo" >
+            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jza2vqfffgdsvnbjb0dg0v68%2F1751611522_img_0.webp?st=2025-07-04T05%3A47%3A10Z&se=2025-07-10T06%3A47%3A10Z&sks=b&skt=2025-07-04T05%3A47%3A10Z&ske=2025-07-10T06%3A47%3A10Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=xkFG034z9YkepUNmxwVWXA8x68Pp%2BauFxIoCI5HWE9g%3D&az=oaivgprodscus"
+                alt="Funverse Logo" id="logo">
             <h2 id="title"> Funverse </h2>
         </div>
         <div id="button">
-            <button class="Login"> Login</button>
-            <button class="Sign-Up"> Sign Up </button>
-
+            <button id="Login"> Log In</button>
+            <button id="Sign-Up"> Sign Up </button>
         </div>
     </div>
     <div id="box">
@@ -30,9 +31,9 @@
             <textarea id="searchTopics" placeholder="Explore topics.." autocomplete="off" spellcheck="false"></textarea>
 
             <div class="features-container">
-                <a href="quiz.html" class="nav-button"> Quiz </a> <br>
+                <a href="quiz.html" id="quiz-button"> <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jzb3zvsnf13ttfvh648wpr6c%2F1751646261_img_1.webp?st=2025-07-04T15%3A51%3A17Z&se=2025-07-10T16%3A51%3A17Z&sks=b&skt=2025-07-04T15%3A51%3A17Z&ske=2025-07-10T16%3A51%3A17Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=ePyvjQW98zHEgyRPZkFbzDMcJ4ezU6uDqeUP47Wg5BM%3D&az=oaivgprodscus" alt="Quiz Logo" id="quiz-logo" > <span>Quiz</span> </a>
 
-                <a href="moodtracker.html" class="nav-button"> Mood Tracker </a>
+                <a href="moodtracker.html" id="mood-button"> <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jzb47w8qfc99cpc0j32fmmev%2F1751646521_img_1.webp?st=2025-07-04T15%3A51%3A17Z&se=2025-07-10T16%3A51%3A17Z&sks=b&skt=2025-07-04T15%3A51%3A17Z&ske=2025-07-10T16%3A51%3A17Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=G3CDScSX4aiVglWp4ukabbUj%2B3Hpa2Epd5vYKcKCwRo%3D&az=oaivgprodscus" alt="Mood Tracker " id="mood-logo"> <span>Mood Tracker</span></a>
             </div>
         </div>
         <div id="imageside">
@@ -40,6 +41,7 @@
                 alt="soraimage" style="max-width:400px; height: auto;">
         </div>
     </div>
+    <script src="script.js"> </script>
 </body>
 
 </html>
