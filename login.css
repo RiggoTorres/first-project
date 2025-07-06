@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #f0f2f5, #d4e0f0);
+    font-family:'Poppins', sans-serif;
+    margin:0;
+    
+}
+
+#login-container {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    margin: 50px auto;
+    min-height: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    animation: opacity 1s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    background: linear-gradient(135deg, #ffffff, #e0e7ff);
+}
+
+.left-side {
+    flex: 1;
+    background: linear-gradient(135deg, #317ec1, #081c60); /* Soft and vibrant blue gradient */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+             animation: opacity 1s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    color: solid white;
+    border-radius: 20px 100px 100px 20px; /* Rounded corners on the left side */
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+        transform: translateX(75px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+#headin2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Baloo 2', cursive;
+}
+
+#paragraph2 {
+    margin-bottom: 20px;
+    color:white;    
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+#Signup-btn {
+    padding: 10px 20px;
+    border: 2px solid #2e4881fe;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    font-size:20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+#Signup-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0.85;
+    transform: scale(1.05) translateY(-2px);
+}
+#Signup-btn:active {
+    transform: scale(0.97) translateY(0px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
+}
+
+.right-side {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+
+#username,
+#password {
+    width: 400px;
+    padding: 10px;
+    background: linear-gradient(135deg, #ffffff, #e0e7ff);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 200;
+    color: #333;
+    outline: none;
+    margin: -5px;
+    transition: all .3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#username:hover,
+#password:hover {
+    box-shadow: 0 0 5px rgba(173, 216, 230, 0.3);
+    transform: scale(1.02);
+}
+
+#username:focus,
+#password:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 8px rgba(14, 165, 233, 0.3);
+    transform: scale(1.02);
+}
+
+#loginbutton {
+    background: rgba(23, 78, 120, 0.728);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all .3s ease;
+    width: 250px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+
+}
+
+#loginbutton:hover {
+    opacity: .8;
+    transform: scale(1.02) translateY(-2px);
+}
+
+#loginbutton:active {
+    transform: scale(0.98) translateY(0px);
+    opacity: 0.9;
+
+}
+
+#loginbutton:focus {
+    transform: scale(1.02);
+    outline: none;
+    box-shadow: 0 0 8px rgba(14, 165, 233, 0.3);
+    border-color: #0ea5e9;
+}
+
+#heading {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Baloo 2', cursive;
+}
+
+#forgot {
+    color: #164972;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#forgot:hover {
+    text-decoration: underline;
+    color: #0c4a6e;
+}
+
+#continue {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+
+}
+#google, #microsoft, #facebook, #github {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding: 8px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    cursor:pointer;
+}
+#other-icons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#google:hover, #microsoft:hover, #facebook:hover, #github:hover {
+  transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+#github:active, #facebook:active, #microsoft:active, #google:active {
+  transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+#github-icon, #facebook-icon, #microsoft-icon, #googleicon {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    cursor:pointer;
+}
