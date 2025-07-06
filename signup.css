@@ -1,0 +1,221 @@
+body {
+    background: linear-gradient(120deg, #f0f2f5, #d4e0f0);
+    font-family:'Poppins', sans-serif;
+    margin:0;
+    animation: opacity 1s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+#both-containers {
+    display: flex;
+    width: 1000px;
+    height:600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffffff, #fffce0);
+}
+
+#left-side {
+    flex: 1;
+    background: linear-gradient(135deg, #5C4033, #B8860B);
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: solid white;
+    border-radius: 100px 20px 20px 100px;
+    transform:translateX(-75px); 
+    animation: opacity 1s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+        transform: translateX(-75px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#headin2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Baloo 2', cursive;
+}
+
+#paragraph2 {
+    margin-bottom: 20px;
+    color:white;    
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#Signup-btn {
+    padding: 10px 20px;
+    border: 2px solid #b48966fe;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    font-size:20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+#Signup-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0.85;
+    transform: scale(1.05) translateY(-2px);
+}
+#Signup-btn:active {
+    transform: scale(0.97) translateY(0px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
+}
+
+#signup-container {
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#username,
+#password,
+#confirm-password {
+    width: 400px;
+    padding: 10px;
+    background: linear-gradient(135deg, #ffffff, #e0e7ff);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 200;
+    color: #333;
+    outline: none;
+    margin: 5px;
+    transition: all .3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#username:hover,
+#password:hover,
+#confirm-password:hover {
+    box-shadow: 0 0 5px rgba(173, 216, 230, 0.3);
+    transform: scale(1.02);
+}
+
+#username:focus,
+#password:focus,
+#confirm-password:focus {
+    border-color: #e9b60e;
+    box-shadow: 0 0 8px rgba(233, 215, 14, 0.3);
+    transform: scale(1.02);
+}
+
+#signupbutton {
+    background-color: #86461e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all .3s ease;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#signupbutton:hover {
+    opacity: .8;
+    transform: scale(1.02) translateY(-2px);
+}
+
+#signupbutton:active {
+    transform: scale(0.98) translateY(0px);
+    opacity: 0.9;
+
+}
+
+#signup:focus {
+    transform: scale(1.02);
+    outline: none;
+    box-shadow: 0 0 8px rgba(14, 165, 233, 0.3);
+    border-color: #0ea5e9;
+}
+
+#heading {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+
+#register {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+
+}
+
+#github-icon, #facebook-icon, #microsoft-icon, #googleicon  {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    cursor:pointer;
+}
+
+#other-icons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#google, #microsoft, #facebook, #github {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding: 8px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+}
+
+#google:hover, #microsoft:hover, #facebook:hover, #github:hover {
+  transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+#github:active, #facebook:active, #microsoft:active, #google:active {
+  transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
