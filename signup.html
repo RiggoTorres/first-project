@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Funverse Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://videos.openai">
+    <link rel="stylesheet" href="signup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="both-containers">
+        <div id="signup-container">
+      <h1 id = "heading">Welcome to Funverse</h1>
+
+            
+        <input type="text" id="username" placeholder="Username" name="username" required>
+      
+        
+        <input type="password" id="password" placeholder="Password" name="password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" name="confirm-password" required>
+        <button type="submit" id="signupbutton" >Sign Up</button>
+
+        
+        <p id = "register">or register with the following</p>
+      
+        <div id="other-icons">
+            <button id="google"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPkAAADKCAMAAABQfxahAAAAhFBMVEX///8AAADQ0NC6urrj4+Pz8/P7+/v29vbn5+ciIiIbGxvY2Njw8PDCwsLq6urc3NyamppZWVlTU1M7Ozs0NDSkpKRhYWGFhYVzc3OOjo7AwMDKysrS0tJubm4XFxeurq5DQ0MrKyuKiooLCwtISEg4ODgYGBh8fHyqqqpwcHAuLi5WVlZNeWaPAAAF0klEQVR4nO2d61riMBCGW3oACoVyPhQoCIqL939/i/iwKpLJpEmchJ33t5Z8TTqdQzINAoZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhLJHE/UaZL/OyXHXiLvVofoU0XhbrbXsffiUbrYsoTqnHZo9kVUxDgEHReMTpT6ppBsn+YDOoHkt8Ug3lqq8cHkd857iX6/3GvEM9ZhMst4qyL2xz6nHrUj3X0f3OaEk9dh3y2rov896gHn9d+gpm7T7rFrWGWsx0db8zoVahTvliQvj5ce9TK1EjNTLhH7xSi1GhPzYnPAynTWo9aCKTus+cfFnxBlf6FS/8mhSMx+rigY1v1nJW5Syohclote0Ib7vu09gSnsXUyiS0NnaE712f8d7JjvC26zOeGvVfPtm4PuOBdmh2H+eNW3C0I/zF9aUeTOwIb/eohcloKOk5TWdFFeV5VBWz6Q4S7vyMJ/gX+aEob4KvpCwO9/924/yMB1hnfVAJtPTupeTdN27YuHQGrt3++ubPM/eF91C6F9LaSWv+bcbdX+rB7WTdA5dH7XyGeh7MeFDKde/QufPr2zHzoLqG8FqPCqm0/u5yqzyYcYQPEyldr3l+UbQ9mPEgkVVKM+XK6MwH4xYEhUT4qca6TcwP0zyJRPjWCxV1kEz57mGFN2GHfefFA1sLid/qS3WkBiNQuNrrzCv6oPAZ9fAs8gQJHz/wtkbYvj3E3i4BYKxypB6dTaCC8cYH17s20GIvqAdnE9CyP7B5C4LX/3XKwYzr47qtZ1Jgx/pDG3bwMfd2zyoKIFo5Yf6/2dCBsu4EuK4o+xYDa0bOm215AICBQzmuespfbMsTk4oj1A0qy6ynPKTbFApk4KaoC2gqp8t6tMSDwu3b01ROtyV0JR4U7gyKpvLKsj4xS/GgcJG5pnI6/xjw2nGuq6ZyOjdRXE/LcHGapnKcGbWBuMaww11AU/nQrjyAhXBMz7gLaCrf2hQHIlY+wl1AUzny/lpA7Lb/jvKxXXkA1KudTjm1haNTTv1Wo1NeiQf1K54M0ppYgNp73VpVB0EdsQws6xNDHaX+saxPDHVmgu7wXirupbBBGXdN5YQnNmkzkJRbUYAa8i9kncOVbX1igEoDysvQVE5Yn4eqS5jEaBJJWf4R/4R1fWKgiqIpwytWfjD0C7UYiJXvzNQBgL3zpNVaaGe7GcsLmALSniPQg46qpkoB7i3tnjOo2Z2RSRcv9ox2EzV0CtdE+AwsKrrM6wVwJ6CBGsjc6tV1gI+jam8SAqJBSg/uAnjoXHtBQlc3MXodOpBy3WgKenWszYxfA7ipht6SFBzNvkDfKxFIQ57Z60QVkJ+0oT8YlMAd8A71d7+Cm2rnBiXURVxpuVDbyiVgVx4XNhp2YeV1q9wp2KMFWcSxDHiU5cxbrQUPhIGhK03TZJMebtXNXAoLD+nt2wXZkdwwU325dSVN5lw5DdbcyaQrrk5pbxpn9s4jOosMFY5iywyHM1MeyMzRBwtkeiqX9+Rx6FAUKn3cxuxZbCBuolMnZHDtsrKJZN5zyFO/Yii3aQpsb7jjbc+oTzoLxIccQud6v+K6CL3Tnkc/n9NedMR2UqSrmgvI0dLP7KdPk+WqH8f9TlkVR8wa/4czb7R/SCIXU7h4lt9KV+NbXIhOf2Crr/FXnt2y61e6lvrcfsHVhh2x6hdnVCmpFQqBM7HauBGV38eqdKe81h9YlO5QhHaX2FIf8/CJWpmUrpJHhsbtpf6BlQ81ePJRFmliThl3X2c3KIUvcsauOjB3SEyueM9aVsCVRhVcjM5AumamfepQuhFNCXfNwzD2xrTd8KoZvU087sBU1Hfp9tgMvaOkrzW1F45UDXUoMSWY7wy9M+gCWoVKpuq0cP6zFCrESPGjwiOHDUsvl2TWh7PcvWy6KZJONXv7WUUav3/63W9TjqTbb+RRFFVRlJed/0MywzAMwzAMwzAMwzAMwzAMwzAMwzAMwzCMC/wF0G5N1YQEnBIAAAAASUVORK5CYII=" alt="linkedlogo" id="googleicon"></button>
+            <button id="microsoft"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReltsQKqVyPorK6KtcONHrEQU1fkSBTh5uvw&s" alt="microsofticon" id="microsoft-icon"></button>
+            <button id="facebook"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAADCwsJJSUlVVVWBgYGenp6wsLCEhISpqanS0tKYmJju7u5paWlRUVGTk5Pi4uL19fUaGhrKyspgYGB3d3ehoaHW1tYyMjK6urrp6enExMSMjIxbW1vg4OBEREQ7Ozuav0tWAAACQklEQVR4nO3bWVICQRBFUYtmbGYRZ9T9r1L4wA+lyq4mIzIfcc8K3g1CiK4u7+4AAAAAAAAAAAAAAAAAANdbtJP5aDlcNU2zGj4s99P142TQbrbeu2w8jQ8pa+S97mrtPl93C4Wz+3JfSu/eE68y+y/vaO098grtv5/fydx7Zn+jLn0pjb139rV97haYHr2X9vTasS+lmffUfjadA9PEe2svi+6B6cV7bC+dvkSVCx8qAtPAe20PLzWB6c17bg9VgWnnPbdex1/6s9Z7b7Wa79GTJ+/B1So/QsHCysC08R5ca3LzhavawlfvxbVqA9PCe3Glt+pCtdO293LOYTofn82P1uup9+JapT/Dod6P+wWFQNFH3V+2+UDtU8MfhWd772lG2myg+tH22S5bqPige8kgW/jhPc1IvlDthz0nX+i9zAqF+ijUR6E+CvVRqI9CfRTqo1AfhXI+s0HdNd4RRUODwqV3RJFF4d47osiiMPbrNYvC2LegLQpj3xG2KIz9WtGiMPYNWovC2C+lLApj3020KIx9fcGiMPaLRYvC2PfaLApj3/qyKIz9ctii0LuhjEIKj+69G8oMCp+9G8oMCmMf01gUHrwbygwKYx9EWZwmBi/8I3830XuZlZs78/6DQn0U6qNQH4X6KNRHoT4K9VGoj0J9FOqjUB+F+ijUR6E+CvVRqI9CfRTqo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6KNRHoT4K9d1+4e6ruSz4v2wDAAAAAAAAAAAAAAAAQEzfi3sbZhixRV0AAAAASUVORK5CYII=" alt="facebookicon" id="facebook-icon"></button>
+            <button id="github"><img src="data:image/png;base64,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" alt="githubicon" id="github-icon"></button>
+        </div>
+    </div>
+    <div id="left-side">
+        <h1 id="headin2"> Welcome Back!</h1>
+        <p id="paragraph2">Already have an account?</p>
+        <a href="login.html">
+            <button id="Signup-btn">Log In</button>
+        </a>
+    </div>
+    
+    </div>
+</body>
